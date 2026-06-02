@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Öğrenci Kayıt ve Listesi - Mentor Eğitim Kurumları</title>
+  <meta name="description" content="Mentor Eğitim Kurumları yeni öğrenci kayıt formu ve mevcut öğrenci listesi.">
+  <meta name="keywords" content="öğrenci kayıt, mentor eğitim, kayıt listesi, öğrenci otomasyonu">
+
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  </head>
+
+<body class="starter-page-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <h1 class="sitename">Mentor</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Ana Sayfa</a></li>
+          <li><a href="about.html">Öğrenci Kayıt Paneli</a></li>
+          <li><a href="courses.html">Kurslar</a></li>
+          <li><a href="trainers.html">Eğitmenler</a></li>
+          <li><a href="events.html">Sınavlar</a></li>
+          <li><a href="schedule.html">Ders Programı</a></li>
+          <li><a href="register.html" class="active">Öğrenci Kayıt Paneli</a></li>
+          <li><a href="contact.html">İletişim</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="register.html">Kayıt Ol</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <div class="page-title" data-aos="fade">
+      <div class="heading">
+        <div class="container">
+          <div class="row d-flex justify-content-center text-center">
+            <div class="col-lg-8">
+              <h1>Öğrenci Kayıt Paneli</h1>
+              <p class="mb-0">Kurumumuza yeni katılacak öğrencilerin ön kayıt işlemlerini gerçekleştirebilir ve sisteme kayıtlı güncel öğrenci listesini takip edebilirsiniz.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="breadcrumbs">
+        <div class="container">
+          <ol>
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li class="current">Öğrenci Kayıt</li>
+          </ol>
+        </div>
+      </nav>
+    </div><section id="registration-section" class="registration-section section py-5">
+      <div class="container" data-aos="fade-up">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="card shadow border-0 rounded-4">
+              <div class="card-body p-4 p-md-5">
+                <div class="text-center mb-4">
+                  <h3 class="fw-bold text-dark"><i class="bi bi-person-plus-fill text-primary me-2"></i>Yeni Öğrenci Ön Kayıt Formu</h3>
+                  <p class="text-muted">Lütfen öğrenciye ait bilgileri eksiksiz ve SQL formatına uygun şekilde giriniz.</p>
+                </div>
+
+                <form action="#" method="POST" class="row g-4">
+                  <div class="col-md-6">
+                    <label class="form-label fw-semibold text-secondary">T.C. Kimlik Numarası</label>
+                    <div class="input-group">
+                      <span class="input-group-text bg-light text-muted"><i class="bi bi-card-text"></i></span>
+                      <input type="text" maxlength="11" class="form-control" placeholder="11 haneli T.C. No" required>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label class="form-label fw-semibold text-secondary">Telefon Numarası</label>
+                    <div class="input-group">
+                      <span class="input-group-text bg-light text-muted"><i class="bi bi-telephone"></i></span>
+                      <input type="tel" class="form-control" placeholder="05XXXXXXXXX" required>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label class="form-label fw-semibold text-secondary">Öğrencinin Adı</label>
+                    <div class="input-group">
+                      <span class="input-group-text bg-light text-muted"><i class="bi bi-person"></i></span>
+                      <input type="text" class="form-control" placeholder="Öğrencinin adı" required>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label class="form-label fw-semibold text-secondary">Öğrencinin Soyadı</label>
+                    <div class="input-group">
+                      <span class="input-group-text bg-light text-muted"><i class="bi bi-person-fill"></i></span>
+                      <input type="text" class="form-control" placeholder="Öğrencinin soyadı" required>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label class="form-label fw-semibold text-secondary">Doğum Tarihi</label>
+                    <div class="input-group">
+                      <span class="input-group-text bg-light text-muted"><i class="bi bi-calendar-event"></i></span>
+                      <input type="date" class="form-control" required>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label class="form-label fw-semibold text-secondary">Atanacak Sınıf (SinifID)</label>
+                    <div class="input-group">
+                      <span class="input-group-text bg-light text-muted"><i class="bi bi-door-open"></i></span>
+                      <select class="form-select" required>
+                        <option value="" selected disabled>Sınıf seçiniz...</option>
+                        <option value="1">Sınıf 1 (Sayısal - A)</option>
+                        <option value="2">Sınıf 2 (Sayısal - B)</option>
+                        <option value="3">Sınıf 3 (Eşit Ağırlık - A)</option>
+                        <option value="4">Sınıf 4 (YDT / Dil)</option>
+                        <option value="5">Sınıf 5 (Ara Sınıf 11)</option>
+                        <option value="6">Sınıf 6 (Sayısal Mezun)</option>
+                        <option value="7">Sınıf 7 (EA Mezun)</option>
+                        <option value="8">Sınıf 8 (LGS Hazırlık)</option>
+                        <option value="9">Sınıf 9 (Özel Takviye)</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="col-12 text-center mt-4">
+                    <button type="submit" class="btn btn-primary px-5 py-2 fw-semibold shadow-sm"><i class="bi bi-check-circle me-2"></i>Öğrenciyi Sisteme Kaydet</button>
+                  </div>
+                </form>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="student-list-section" class="student-list-section section light-background py-5">
+      <div class="container" data-aos="fade-up">
+        
+        <div class="section-title text-center mb-4">
+          <h2 class="fw-bold">Sistemde Kayıtlı Öğrenciler</h2>
+          <p class="text-muted">Veritabanında (dbo.Ogrenciler) bulunan aktif öğrenci kayıtlarının güncel listesi</p>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <div class="table-responsive rounded shadow bg-white">
+              <table class="table table-hover align-middle mb-0 text-nowrap">
+                <thead class="table-dark">
+                  <tr>
+                    <th scope="col" class="ps-4">ID</th>
+                    <th scope="col">T.C. Kimlik No</th>
+                    <th scope="col">Adı Soyadı</th>
+                    <th scope="col">Doğum Tarihi</th>
+                    <th scope="col">Telefon</th>
+                    <th scope="col">Sınıf ID</th>
+                    <th scope="col" class="pe-4">Kayıt Tarihi</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="ps-4 fw-bold text-secondary">#1</td>
+                    <td><code>12345678901</code></td>
+                    <td class="fw-semibold">Burak Arslan</td>
+                    <td>12-05-2008</td>
+                    <td>0555 111 11 11</td>
+                    <td><span class="badge bg-primary">Sinif 1</span></td>
+                    <td class="pe-4 text-muted">22-05-2026 15:44</td>
+                  </tr>
+                  <tr>
+                    <td class="ps-4 fw-bold text-secondary">#2</td>
+                    <td><code>12345678902</code></td>
+                    <td class="fw-semibold">Ebru Yurt</td>
+                    <td>20-09-2008</td>
+                    <td>0555 222 22 22</td>
+                    <td><span class="badge bg-primary">Sinif 1</span></td>
+                    <td class="pe-4 text-muted">22-05-2026 15:44</td>
+                  </tr>
+                  <tr>
+                    <td class="ps-4 fw-bold text-secondary">#3</td>
+                    <td><code>12345678903</code></td>
+                    <td class="fw-semibold">Caner Bulut</td>
+                    <td>15-03-2007</td>
+                    <td>0555 333 33 33</td>
+                    <td><span class="badge bg-primary">Sinif 2</span></td>
+                    <td class="pe-4 text-muted">22-05-2026 15:44</td>
+                  </tr>
+                  <tr>
+                    <td class="ps-4 fw-bold text-secondary">#4</td>
+                    <td><code>12345678904</code></td>
+                    <td class="fw-semibold">Damla Güneş</td>
+                    <td>02-11-2007</td>
+                    <td>0555 444 44 44</td>
+                    <td><span class="badge bg-primary">Sinif 3</span></td>
+                    <td class="pe-4 text-muted">22-05-2026 15:44</td>
+                  </tr>
+                  <tr>
+                    <td class="ps-4 fw-bold text-secondary">#5</td>
+                    <td><code>12345678905</code></td>
+                    <td class="fw-semibold">Engin Koç</td>
+                    <td>25-01-2006</td>
+                    <td>0555 555 55 55</td>
+                    <td><span class="badge bg-primary">Sinif 8</span></td>
+                    <td class="pe-4 text-muted">22-05-2026 15:44</td>
+                  </tr>
+                  <tr>
+                    <td class="ps-4 fw-bold text-secondary">#6</td>
+                    <td><code>12345678906</code></td>
+                    <td class="fw-semibold">Gizem Acar</td>
+                    <td>14-07-2006</td>
+                    <td>0555 666 66 66</td>
+                    <td><span class="badge bg-primary">Sinif 6</span></td>
+                    <td class="pe-4 text-muted">22-05-2026 15:44</td>
+                  </tr>
+                  <tr>
+                    <td class="ps-4 fw-bold text-secondary">#7</td>
+                    <td><code>12345678907</code></td>
+                    <td class="fw-semibold">Hakan Taş</td>
+                    <td>08-08-2006</td>
+                    <td>0555 777 77 77</td>
+                    <td><span class="badge bg-primary">Sinif 7</span></td>
+                    <td class="pe-4 text-muted">22-05-2026 15:44</td>
+                  </tr>
+                  <tr>
+                    <td class="ps-4 fw-bold text-secondary">#8</td>
+                    <td><code>12345678908</code></td>
+                    <td class="fw-semibold">İrem Yücel</td>
+                    <td>12-12-2005</td>
+                    <td>0555 888 88 88</td>
+                    <td><span class="badge bg-primary">Sinif 9</span></td>
+                    <td class="pe-4 text-muted">22-05-2026 15:44</td>
+                  </tr>
+                  <tr>
+                    <td class="ps-4 fw-bold text-secondary">#9</td>
+                    <td><code>12345678909</code></td>
+                    <td class="fw-semibold">Kerem Sarı</td>
+                    <td>30-04-2005</td>
+                    <td>0555 999 99 99</td>
+                    <td><span class="badge bg-primary">Sinif 5</span></td>
+                    <td class="pe-4 text-muted">22-05-2026 15:44</td>
+                  </tr>
+                  <tr>
+                    <td class="ps-4 fw-bold text-secondary">#10</td>
+                    <td><code>12345678910</code></td>
+                    <td class="fw-semibold">Pelin Şen</td>
+                    <td>18-06-2007</td>
+                    <td>0555 010 10 10</td>
+                    <td><span class="badge bg-primary">Sinif 4</span></td>
+                    <td class="pe-4 text-muted">22-05-2026 15:44</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">Mentor</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>Atatürk Mahallesi, İstiklal Caddesi</p>
+            <p>No: 42 Kat: 3, Kadıköy / İstanbul</p>
+            <p class="mt-3"><strong>Telefon:</strong> <span>0 (216) 444 0 123</span></p>
+            <p><strong>Email:</strong> <span>info@mentoregitim.com</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Faydalı Bağlantılar</h4>
+          <ul>
+            <li><a href="#">Ana Sayfa</a></li>
+            <li><a href="#">Hakkımızda</a></li>
+            <li><a href="#">Kurslarımız</a></li>
+            <li><a href="#">Kullanım Şartları</a></li>
+            <li><a href="#">Gizlilik Politikası</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Eğitimlerimiz</h4>
+          <ul>
+            <li><a href="#">YKS Hazırlık</a></li>
+            <li><a href="#">LGS Hazırlık</a></li>
+            <li><a href="#">Ara Sınıf Takviye Programları</a></li>
+            <li><a href="#">Birebir Rehberlik & Koçluk</a></li>
+            <li><a href="#">Hızlandırılmış Yaz Kampları</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-12 footer-newsletter">
+          <h4>E-Bülten</h4>
+          <p>Sınav takvimleri, rehberlik yazıları ve erken kayıt avantajlarından haberdar olmak için bültenimize abone olun!</p>
+          <form action="forms/newsletter.php" method="post" class="php-email-form">
+            <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Abone Ol"></div>
+            <div class="loading">Yükleniyor...</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Bülten abonelik talebiniz başarıyla gönderildi. Teşekkür ederiz!</div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Telif Hakkı 2026</span> <strong class="px-1 sitename">Mentor</strong> <span>Tüm Hakları Saklıdır</span></p>
+      <div class="credits">
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href="https://themewagon.com">ThemeWagon</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
