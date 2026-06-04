@@ -45,7 +45,7 @@ Arayüzde yer alan HTML sayfaları ile veritabanındaki (SQL) tabloların mantı
 ├── course-details.html -------------> sp_SinifOgrencileriniGetir (Sınıf Detayları)
 ├── events.html (Sınavlar/Etkinlik) -> Tbl_Sinavlar & Tbl_SinavSonuclari
 └── contact.html (Kayıt/İletişim) ---> sp_OgrenciEkle (Yeni Öğrenci Kayıt Formu)
-
+```
 ### 🔑 Yönetim ve Eğitim Kadrosu
 `Ogretmenler` ve `Siniflar` tabloları kurumun fiziksel ve idari altyapısını yönetir. `CHK_OgretmenMaas` kısıtlaması ile öğretmen maaşlarının asgari ücret sınırının (17002.00 TL) altına düşmesi engellenirken, `CHK_SinifKontenjan` ile sınıfların fiziksel kapasitesi 5-30 kişi arasında sınırlandırılmıştır.
 
@@ -62,7 +62,9 @@ Arayüzde yer alan HTML sayfaları ile veritabanındaki (SQL) tabloların mantı
 `Sinavlar` ve `SinavSonuclari` tabloları öğrencilerin gelişim grafiklerini çıkarır. `TRG_NotKontrol` trigger'ı sayesinde sisteme 0-100 aralığı dışında hatalı not girişi yapılması engellenir. `UC_OgrenciSinavDers` kısıtlaması ile bir öğrenciye aynı sınavda aynı ders için mükerrer (çift) not girilmesinin önüne geçilir; sonuçlar `events.html` sayfasında dinamik duyurulur.
 
 ### 📊 5. Veri Tabanı Tasarımı (ER Yapısı ve İlişkiler)
-<img width="989" height="809" alt="Ekran Görüntüsü (2)" src="https://github.com/user-attachments/assets/65f22c5f-4435-4ecf-8d44-5ee88f3c2b06" />
+<img width="989" height="809" alt="ER DİYAGRAMI" src="https://github.com/user-attachments/assets/41a6505a-7636-4a10-b466-984033f2c399" />
+
+
 
 
 Sistem veri tutarlılığını (Data Integrity) korumak amacıyla üçüncü normal formda (3NF) ilişkisel bir MSSQL şeması üzerine kurulmuştur:
