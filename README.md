@@ -89,12 +89,14 @@ Yeni bir öğrenci eklendiğinde veya bir öğrencinin sınıfı güncellendikte
 2️⃣ Not Kontrolü (TRG_NotKontrol)
 Sınav sonuçları girilirken veya güncellenirken girilen puan değerinin mantıksal aralıkta (0 - 100) kalmasını sağlar. Hatalı bir not girişinde işlemi durdurur.
 graph TD
+```mermaid
     A[Web Arayüzünden Öğrenci Kayıt İsteği] --> B[SQL INSERT Komutu Tetiklendi]
     B --> C[TRG_KontenjanKontrol Aktifleşti]
     C --> D{Mevcut Sayı > Kontenjan?}
     D -- Evet --> E[RAISERROR: Sınıf Dolu!]
     E --> F[ROLLBACK: Kayıt İptal Edildi]
     D -- Hayır --> G[COMMIT: Öğrenci Başarıyla Kaydedildi]
+```
 
 ### 💻 7. Projenin Yüklenmesi ve Çalıştırılması
 Gereksinimler
