@@ -120,7 +120,11 @@ Projenin backend yapılandırma dosyasındaki bağlantı adresini kendi yerel SQ
 Projeyi Başlatın:
 index.html dosyasını tarayıcınızda açarak arayüzü inceleyebilir, backend sunucunuzu ayağa kaldırarak dinamik veritabanı bağlantısını test edebilirsiniz.
 
-### 8.Referanslar
+### 8.Geliştirilen Arayüzden Örnek Görseller
+<img width="1315" height="598" alt="otomasyon sistemi ana sayfası" src="https://github.com/user-attachments/assets/824c6df7-13f8-4275-b3ca-91dcff6eebca" />
+
+
+### 9.Referanslar
 Microsoft Learn, SQL Server ve ADO.NET Veri Erişimi Dokümantasyonu.
 BootstrapMade, Mentor Free Education Bootstrap Template Documentation.
 T.C. Çalışma ve Sosyal Güvenlik Bakanlığı, Asgari Ücret Verileri (Maaş CHECK kısıtlaması için veri kaynağı).
