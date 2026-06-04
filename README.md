@@ -65,8 +65,6 @@ Arayüzde yer alan HTML sayfaları ile veritabanındaki (SQL) tabloların mantı
 <img width="989" height="809" alt="ER DİYAGRAMI" src="https://github.com/user-attachments/assets/41a6505a-7636-4a10-b466-984033f2c399" />
 
 
-
-
 Sistem veri tutarlılığını (Data Integrity) korumak amacıyla üçüncü normal formda (3NF) ilişkisel bir MSSQL şeması üzerine kurulmuştur:
 
 🔹 İlişkiler ve Silme Senaryoları (Cascading)
